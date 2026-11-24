@@ -6,7 +6,7 @@
 const TYPED_WORDS = ["SQL", "Python", "Power BI", "Excel", "Tableau"];
 
 // Adresse qui reçoit les messages du formulaire
-const CONTACT_EMAIL = "prenom.nom@exemple.fr";
+const CONTACT_EMAIL = "felanachristelle@gmail.com";
 
 // Détail de chaque projet (clé = valeur de data-project dans index.html)
 const PROJECTS = {
