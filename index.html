@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RAKOTONDRAHASY – Data Analyst</title>
+<meta name="description" content="Portfolio de Felana Christelle RAKOTONDRAHASY, data analyst : SQL, Python, Power BI, visualisation de données.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--
+  Chaque texte traduisible porte un attribut data-i18n="clé".
+  Le texte écrit ici n'est qu'un secours : le contenu réel est dans i18n.js.
+-->
+
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <nav>
+      <a href="#accueil" class="logo"><b>&gt;</b> Felana Christelle RAKOTONDRAHASY</a>
+      <div class="nav-links" id="navLinks">
+        <a href="#apropos" data-i18n="nav.about">À propos</a>
+        <a href="#competences" data-i18n="nav.skills">Compétences</a>
+        <a href="#projets" data-i18n="nav.projects">Projets</a>
+        <a href="#parcours" data-i18n="nav.career">Parcours</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <select class="lang-select" id="langSelect" data-i18n-aria="aria.lang">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <!-- Autres langues prêtes dans i18n.js, à réactiver plus tard :
+          <option value="ru">RU</option>
+          <option value="pt">PT</option>
+          <option value="es">ES</option>
+          -->
+        </select>
+        <button class="icon-btn" id="themeBtn" data-i18n-aria="aria.theme" aria-label="Changer de thème">◐</button>
+        <button class="icon-btn burger" id="burger" data-i18n-aria="aria.menu" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="navLinks">☰</button>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <!-- ACCUEIL -->
+  <section class="hero" id="accueil">
+    <div class="wrap hero-grid">
+      <div>
+        <span class="label" data-i18n="hero.label">// consultante data · prête à vous accompagner</span>
+        <h1 data-i18n-html="hero.title">Je transforme vos données en <span>décisions claires</span>.</h1>
+        <p class="typed-line"><span data-i18n="hero.typed">Je maîtrise</span> <b class="mono" id="typed"></b><span class="caret" aria-hidden="true">|</span></p>
+        <p data-i18n="hero.text">Je centralise, nettoie, analyse et visualise vos données, puis j'en tire des recommandations concrètes pour vous aider à prendre des décisions éclairées.</p>
+        <div class="btns">
+          <a href="#projets" class="btn primary" data-i18n="hero.cta1">Voir mes projets</a>
+          <a href="#contact" class="btn" data-i18n="hero.cta2">Me contacter</a>
+        </div>
+      </div>
+      <!-- Mini tableau de bord -->
+      <div class="panel">
+        <img class="profile-photo" src="img/me.png" data-i18n-alt="profile.alt" alt="Photo de profil de Felana Christelle RAKOTONDRAHASY" loading="lazy">
+        <div class="kpis">
+          <div class="kpi"><div class="v">+<span data-count="5">0</span></div><div class="k" data-i18n="kpi.projects">ans d'expérience</div></div>
+          <div class="kpi"><div class="v">+<span data-count="6">0</span></div><div class="k" data-i18n="kpi.tools">outils maîtrisés</div></div>
+          <div class="kpi"><div class="v">+<span data-count="10">0</span></div><div class="k" data-i18n="kpi.gain">projets d'analyse</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section id="apropos">
+    <div class="wrap reveal">
+      <span class="label" data-i18n="about.label">// 01 à propos</span>
+      <h2 data-i18n="about.title">Une expertise à la croisée des métiers, des données et des technologies</h2>
+      <div class="about">
+        <div>
+          <p data-i18n="about.p1">Analyste de données depuis 2020, spécialisée dans l'analyse, le suivi des indicateurs et le développement de solution data. Mon parcours, construit dans des environnements aussi variés que la relation client, les télécommunications, la distribution pétrolière et l’enseignement, m’a permis de développer une approche à la fois analytique, innovante et orientée vers l’aide à la décision.</p>
+          <p data-i18n="about.p2">Grâce à la maîtrise d’outils informatiques tels que R, Python, Excel, SQL et Power BI, je suis en mesure de vous accompagner dans la réalisation de vos projets liés à la donnée.</p>
+          <p data-i18n="about.p3">Curieuse et dotée d’une grande capacité d’adaptation, je sais également m’approprier rapidement de nouveaux environnements et intégrer les innovations technologiques à mes pratiques, notamment grâce à l'IA générative.</p>
+        </div>
+        <div class="code">
+          <span class="c" data-i18n="about.code"># Ma démarche en quelques lignes</span><br>
+          <div data-i18n-html="about.code.example">
+            <span class="k">def</span> <span class="f">analyser</span>(besoin):<br>
+            &nbsp;&nbsp;données = <span class="f">collecter</span>(besoin)<br>
+            &nbsp;&nbsp;données = <span class="f">nettoyer</span>(données)<br>
+            &nbsp;&nbsp;insights = <span class="f">explorer</span>(données)<br>
+            &nbsp;&nbsp;<span class="k">return</span> <span class="f">raconter</span>(insights, <span class="s">"simple"</span>)
+          </div>
+          <div class="trust">
+            <h3 class="c"><span aria-hidden="true"># </span><span data-i18n="about.trust">Ils m'ont fait confiance</span></h3>
+            <div class="trust-logos">
+              <div class="trust-logo"><img src="img/logo/60_decibels_logo.jpg" alt="60 Decibels" loading="lazy"></div>
+              <div class="trust-logo"><img src="img/logo/logo-orange.png" alt="Orange" loading="lazy"></div>
+              <div class="trust-logo"><img src="img/logo/logo%20jovena.png" alt="Jovena" loading="lazy"></div>
+              <div class="trust-logo"><img src="img/logo/logo-itemm.png" alt="ITEMM" loading="lazy"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="competences">
+    <div class="wrap reveal">
+      <span class="label" data-i18n="skills.label">// 02 compétences</span>
+      <h2 data-i18n="skills.title">Ma boîte à outils</h2>
+      <p class="lead" data-i18n="skills.lead">Outils pour explorer, analyser et présenter les données.</p>
+      <div class="skills">
+        <div class="panel skill-group">
+          <h3 data-i18n="skills.g1">Extraction &amp; exploration</h3>
+          <div class="skill-logos">
+            <div class="skill-tool"><img src="img/skills/sql.svg" alt="" loading="lazy"><span class="skill-tool__name">SQL</span></div>
+            <div class="skill-tool"><img src="img/skills/mongodb.svg" alt="" loading="lazy"><span class="skill-tool__name">MongoDB</span><span class="skill-tool__detail">NoSQL</span></div>
+          </div>
+        </div>
+        <div class="panel skill-group">
+          <h3 data-i18n="skills.g2">Nettoyage &amp; analyse</h3>
+          <div class="skill-logos">
+            <div class="skill-tool"><img src="img/skills/r.svg" alt="" loading="lazy"><span class="skill-tool__name">R</span><span class="skill-tool__detail">Shiny · dplyr</span></div>
+            <div class="skill-tool"><img src="img/skills/python.svg" alt="" loading="lazy"><span class="skill-tool__name">Python</span><span class="skill-tool__detail">pandas · NumPy · scikit-learn · statsmodels</span></div>
+          </div>
+        </div>
+        <div class="panel skill-group">
+          <h3 data-i18n="skills.g3">Visualisation &amp; restitutions</h3>
+          <div class="skill-logos">
+            <div class="skill-tool"><img src="img/skills/power-bi.svg" alt="" loading="lazy"><span class="skill-tool__name">Power BI</span><span class="skill-tool__detail">DAX · Power Query</span></div>
+            <div class="skill-tool"><img class="skill-tool__logo--wordmark" src="img/skills/tableau.png" alt="" loading="lazy"><span class="skill-tool__name">Tableau</span></div>
+          </div>
+        </div>
+        <div class="panel skill-group">
+          <h3 data-i18n="skills.g4">Bureautique</h3>
+          <div class="skill-logos">
+            <div class="skill-tool"><img src="img/skills/excel.svg" alt="" loading="lazy"><span class="skill-tool__name" data-i18n="skills.excel">Excel avancé (TCD, VBA)</span></div>
+            <div class="skill-tool"><img src="img/skills/word.svg" alt="" loading="lazy"><span class="skill-tool__name">Word</span></div>
+            <div class="skill-tool"><img src="img/skills/powerpoint.svg" alt="" loading="lazy"><span class="skill-tool__name">PowerPoint</span></div>
+            <div class="skill-tool"><img src="img/skills/outlook.svg" alt="" loading="lazy"><span class="skill-tool__name">Outlook</span></div>
+          </div>
+        </div>
+      </div>
+    
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets">
+    <div class="wrap reveal">
+      <span class="label" data-i18n="projects.label">// 03 projets</span>
+      <h2 data-i18n="projects.title">Analyses &amp; tableaux de bord</h2>
+      <p class="lead" data-i18n="projects.lead">Filtrez par outil, puis cliquez sur un projet pour voir plus de  détail.</p>
+
+      <div class="filters" role="group" data-i18n-aria="aria.filters" aria-label="Filtrer les projets">
+        <button class="filter active" data-filter="all" data-i18n="filter.all">Tous</button>
+        <button class="filter" data-filter="excel">Excel</button>
+        <button class="filter" data-filter="sql">SQL</button>
+        <button class="filter" data-filter="python">Python</button>
+        <button class="filter" data-filter="tableau">Tableau</button>
+        <button class="filter" data-filter="powerbi">Power BI</button>
+        <button class="filter" data-filter="knime">Knime</button>
+      </div>
+
+      <div class="grid" id="projectGrid">
+        <article class="card" data-cat="python">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/banknote-detection.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p10.title">Détection des faux billets</h3>
+          <p data-i18n="p10.desc">Mettre en place une modélisation qui serait capable d’identifier automatiquement les vrais des faux billets</p>
+          <div class="impact" data-i18n="p10.impact">→ résultat : Un modèle robuste avec un score de 99% qui permet de détecter les faux billets</div>
+          <div class="tags"><span>Python</span></div>
+          <button class="more" data-project="python5" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="sql">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/real-estate.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p1.title">Exploration d'une base de données immobilières</h3>
+          <p data-i18n="p1.desc">Se démarquer de la concurrence pour mieux prévoir le prix de vente des biens immobiliers</p>
+          <div class="impact" data-i18n="p1.impact">→ résultat : Identification des biens à forte valeur ajoutée</div>
+          <div class="tags"><span>SQL</span></div>
+          <button class="more" data-project="ventes" data-i18n="p.more">Voir plus de détail →</button>
+        </article>
+        <article class="card" data-cat="tableau">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/drinking-water.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p5.title">Etude sur l'eau potable</h3>
+          <p data-i18n="p5.desc">Réaliser un tableau de bord qui permet de choisir un pays à cibler</p>
+          <div class="impact" data-i18n="p5.impact">→ résultat : Identification des pays cibles par domaine d'expertise</div>
+          <div class="tags"><span>Tableau</span></div>
+          <button class="more" data-project="tableau" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="python">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/food-world.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p2.title">Etude sur l'alimentation dans le monde</h3>
+          <p data-i18n="p2.desc">Aider une organisation à construire un monde libéré de la faim </p>
+          <div class="impact" data-i18n="p2.impact">→ résultat : 7,10% de sous-nutrition en 2017 alors que théoriquement cela devrait être 1%</div>
+          <div class="tags"><span>Python</span></div>
+          <button class="more" data-project="segmentation" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="excel">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/ecommerce-sales.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p3.title">Analyse des ventes e-commerce</h3>
+          <p data-i18n="p3.desc">Concevoir un rapport mensuel et faire une prévision</p>
+          <div class="impact" data-i18n="p3.impact">→ résultat : Cause de la baisse de CA identifié et prévision</div>
+          <div class="tags"><span>Excel</span></div>
+          <button class="more" data-project="kpi" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="knime">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/gender-equality.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p4.title">Indicateurs de l'égalité femme-homme</h3>
+          <p data-i18n="p4.desc">Améliorer la marque employeur et attirer plus facilement des talents</p>
+          <div class="impact" data-i18n="p4.impact">→ résultat : Index de l'égalité professionnelle = 98%, axes d'amélioration du recrutement</div>
+          <div class="tags"><span>Knime</span></div>
+          <button class="more" data-project="knime" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="powerbi">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/co2-emissions.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p6.title">Emission de CO₂ dans le monde</h3>
+          <p data-i18n="p6.desc">Avoir une vision globale de l'émission de CO₂ par zone</p>
+          <div class="impact" data-i18n="p6.impact">→ résultat : Les pays développés émettent 50% Du total de CO₂ émis dans le monde</div>
+          <div class="tags"><span>Power BI</span></div>
+          <button class="more" data-project="powerbi" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="python">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/shop-management.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p7.title">Optimisation de la gestion d'une boutique</h3>
+          <p data-i18n="p7.desc">Montrer le progrès de vente et détecter les incohérences des données</p>
+          <div class="impact" data-i18n="p7.impact">→ résultat : Astuces pour avoir des données de qualité</div>
+          <div class="tags"><span>Python</span></div>
+          <button class="more" data-project="python2" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="python">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/bookstore.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p8.title">Comprendre les habitudes d'achat en librairie</h3>
+          <p data-i18n="p8.desc">Aider l’entreprise à mieux comprendre ses données</p>
+          <div class="impact" data-i18n="p8.impact">→ résultat : 2 profils clients identifiés et anticipation d'une rupture de stock grâce à la saisonnalité</div>
+          <div class="tags"><span>Python</span></div>
+          <button class="more" data-project="python3" data-i18n="p.more">Voir le détail →</button>
+        </article>
+        <article class="card" data-cat="python">
+          <div class="project-image" aria-hidden="true"><img src="img/projects/market-study.svg" alt="" loading="lazy" decoding="async"></div>
+          <h3 data-i18n="p9.title">Etude de marché</h3>
+          <p data-i18n="p9.desc">Proposer une première analyse des groupements de pays que l’on peut cibler pour exporter les marchandises</p>
+          <div class="impact" data-i18n="p9.impact">→ résultat : 4 clusters identifiés et 3 pays potentiels recommandés</div>
+          <div class="tags"><span>Python</span></div>
+          <button class="more" data-project="python4" data-i18n="p.more">Voir le détail →</button>
+        </article>
+      </div>
+      <nav class="pagination" id="projectPagination" data-i18n-aria="aria.pagination" aria-label="Pagination des projets" hidden></nav>
+      <p class="empty" id="emptyMsg" data-i18n="projects.empty" hidden>Aucun projet dans cette catégorie pour l'instant.</p>
+    </div>
+  </section>
+
+  <!-- PARCOURS -->
+  <section id="parcours">
+    <div class="wrap reveal">
+      <span class="label" data-i18n="career.label">// 04 parcours</span>
+      <h2 data-i18n="career.title">Expériences professionnelles</h2>
+      <div class="timeline">
+        <article class="item">
+          <span class="date">2025 – 2026</span>
+          <h3 data-i18n="career.production.title">Chargée d'études en production et analyse de données</h3>
+          <p class="career-company">Université de Reims Champagne-Ardenne</p>
+          <details>
+            <summary data-i18n="career.missions">Voir les missions</summary>
+            <ul class="career-duties">
+              <li data-i18n="career.urca.1">Piloter la mise en place du système d’information décisionnel (SID) à l’URCA</li>
+              <li data-i18n="career.urca.2">Répondre aux différentes demandes d’indicateurs</li>
+            </ul>
+            <div class="career-tools"><span class="career-tools__label" data-i18n="career.tools">Outils utilisés :</span><span>Power BI</span><span>Excel</span><span>SAP BO</span></div>
+          </details>
+        </article>
+        <article class="item">
+          <span class="date">2023 – 2025</span>
+          <h3 data-i18n="career.orange.title">Experte BI - Data Analyst</h3>
+          <p class="career-company">Orange Wholesale France</p>
+          <details>
+            <summary data-i18n="career.missions">Voir les missions</summary>
+            <ul class="career-duties">
+              <li data-i18n="career.orange.1">Recueillir les besoins métier et proposer des solutions BI (tableaux de bord, automatisation du traitement de données...).</li>
+              <li data-i18n="career.orange.2">Contribuer aux référentiels et à la qualité des données (cubes Power BI, Datalab Stargate).</li>
+            </ul>
+            <div class="career-tools"><span class="career-tools__label" data-i18n="career.tools">Outils utilisés :</span><span>Power BI</span><span>Python</span><span>Datalab Stargate</span></div>
+          </details>
+        </article>
+        <article class="item">
+          <span class="date">2023</span>
+          <h3 data-i18n="career.quality.title">Chargée de mission qualité des données</h3>
+          <p class="career-company">ITEMM Le Mans</p>
+          <details>
+            <summary data-i18n="career.missions">Voir les missions</summary>
+            <ul class="career-duties">
+              <li data-i18n="career.itemm.1">Recueillir, mettre à jour et enrichir la base de données "contact" de l’Institut</li>
+              <li data-i18n="career.itemm.2">Mettre en conformité les fichiers aux normes RGPD</li>
+            </ul>
+            <div class="career-tools"><span class="career-tools__label" data-i18n="career.tools">Outils utilisés :</span><span>Excel</span><span>Brevo</span></div>
+          </details>
+        </article>
+        <article class="item">
+          <span class="date">2022 – 2023</span>
+          <h3>Data Analyst</h3>
+          <p class="career-company">Jovena</p>
+          <details>
+            <summary data-i18n="career.missions">Voir les missions</summary>
+            <ul class="career-duties">
+              <li data-i18n="career.jovena.1">Accompagner les équipes commerciales dans l’interprétation des données de vente</li>
+              <li data-i18n="career.jovena.2">Intermédiaire entre le gérant de la station service et les fournisseurs afin d'optimiser les actions marketing au niveau des boutiques</li>
+            </ul>
+            <div class="career-tools"><span class="career-tools__label" data-i18n="career.tools">Outils utilisés :</span><span>Excel</span><span>R Shiny</span></div>
+          </details>
+        </article>
+        <article class="item">
+          <span class="date">2020 – 2022</span>
+          <h3>Data Analyst CBM (Customer Based Management)</h3>
+          <p class="career-company">Orange Madagascar</p>
+          <details>
+            <summary data-i18n="career.missions">Voir les missions</summary>
+            <ul class="career-duties">
+              <li data-i18n="career.omg.1">Accompagner l'équipe marketing dans la compréhension des clients et la définition du plan marketing relationnel</li>
+              <li data-i18n="career.omg.2">Analyser, traiter, exploiter et suivre l'évolution des indicateurs afind'optimiser les campagnes</li>
+            </ul>
+            <div class="career-tools"><span class="career-tools__label" data-i18n="career.tools">Outils utilisés :</span><span>NoSQL</span><span>Excel</span><span>R</span><span>Python</span></div>
+          </details>
+        </article>
+        <article class="item">
+          <span class="date">2019 – 2023</span>
+          <h3 data-i18n="career.research.title">Assistante de recherche</h3>
+          <p class="career-company">60 Decibels</p>
+          <details>
+            <summary data-i18n="career.missions">Voir les missions</summary>
+            <ul class="career-duties">
+              <li data-i18n="career.60db.1">Conduire une enquête à partir des appels téléphoniques et faire des traductions Anglais - Malgache</li>
+              <li data-i18n="career.60db.2">Effectuer le codage des données qualitatives et assurer la qualité des réponses collectées.</li>
+            </ul>
+            <div class="career-tools"><span class="career-tools__label" data-i18n="career.tools">Outils utilisés :</span><span>Google Sheets</span><span>Qualtrics</span></div>
+          </details>       
+      </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="wrap reveal">
+      <div class="contact">
+        <span class="label" data-i18n="contact.label">// 05 contact</span>
+        <h2 class="contact__title" data-i18n="contact.title">Un besoin d'analyse ?</h2>
+        <p class="lead contact__lead" data-i18n="contact.lead">Parlons de vos données et de ce que vous voulez en tirer.</p>
+        <article class="contact-card">
+          <div class="contact-card__content">
+            <h2 class="contact-card__name" data-i18n="contact.name">Felana Christelle RAKOTONDRAHASY</h2>
+            <p class="contact-card__role" data-i18n="contact.role">Consultante Data</p>
+            <div class="contact-card__details">
+              <p class="contact-card__location">
+                <svg class="contact-card__icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="2.5"/>
+                </svg>
+                <span data-i18n="contact.location">Marne, Grand Est, France</span>
+              </p>
+            </div>
+            <div class="links">
+              <a href="mailto:felanachristelle@gmail.com" data-i18n-aria="contact.email" aria-label="E-mail">
+                <svg class="links__email-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <rect x="3" y="5" width="18" height="14" rx="2"/>
+                  <path d="m4 7 8 6 8-6"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/felana-christelle-rakotondrahasy/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M6.5 8.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3ZM5.2 10h2.6v8.8H5.2zM10 10h2.5v1.2c.4-.7 1.2-1.4 2.6-1.4 2.8 0 3.3 1.8 3.3 4v5h-2.6v-4.4c0-1.1 0-2.5-1.5-2.5s-1.8 1.2-1.8 2.4v4.5H10z"/>
+                </svg>
+              </a>
+              <a href="https://github.com/princess-fe" target="_blank" rel="noopener noreferrer" aria-label="GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 .5a12 12 0 0 0-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.4-4-1.4-.6-1.4-1.4-1.8-1.4-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2a11.5 11.5 0 0 1 6 0c2.3-1.5 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0 0 12 .5Z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>© <span id="year"></span> <span data-i18n="footer.text">RAKOTONDRAHASY · construit avec du HTML, du CSS et un peu de JavaScript</span></footer>
+
+<button class="to-top" id="toTop" data-i18n-aria="aria.top" aria-label="Remonter en haut" hidden>↑</button>
+
+<!-- Fenêtre de détail d'un projet -->
+<div class="modal" id="modal" hidden>
+  <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <button class="icon-btn modal-close" id="modalClose" data-i18n-aria="aria.close" aria-label="Fermer">✕</button>
+    <h3 id="modalTitle"></h3>
+    <dl id="modalBody"></dl>
+    <div class="tags" id="modalTags"></div>
+  </div>
+</div>
+
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

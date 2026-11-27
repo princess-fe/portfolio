@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 140">
+  <circle cx="160" cy="76" r="43" fill="#172140" stroke="#4de0c4" stroke-width="3"/>
+  <path d="M120 76h80M160 33c-15 12-22 27-22 43s7 31 22 43m0-86c15 12 22 27 22 43s-7 31-22 43" fill="none" stroke="#6c8cff" stroke-width="2"/>
+  <path d="M112 51c0-12 10-20 21-18 5-12 22-13 29-2 12-1 19 8 18 20" fill="#172140" stroke="#8f9bbd" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M212 48h23a13 13 0 0 1 0 26h-23a13 13 0 0 1 0-26Z" fill="#ffb454"/>
+  <text x="223.5" y="66" text-anchor="middle" fill="#172140" font-family="Arial,sans-serif" font-size="12" font-weight="700">CO₂</text>
+</svg>
